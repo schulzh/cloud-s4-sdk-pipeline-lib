@@ -5,7 +5,7 @@ import org.jenkinsci.plugins.workflow.libs.LibraryConfiguration
 def call(Map parameters = [:]) {
     Script script = parameters.script
 
-    library "piper-lib-os-debug"
+    library "piper-lib-os-debug@patch-1"
 }
 
 private boolean isLibraryConfigured(String libName){
